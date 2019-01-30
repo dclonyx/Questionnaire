@@ -11,17 +11,17 @@
 <div class="card-body px-lg-5 pt-0">
 
   <!-- Form -->
-  <form class="text-center" action= style="color: #757575;">
+  <form class="text-center" action="traitementco.php" method="POST" style="color: #757575;">
 
     <!-- Email -->
     <div class="md-form">
-        <input type="email" id="materialLoginFormEmail" class="form-control">
+        <input type="email" name="materialLoginFormEmail" class="form-control">
         <label for="materialLoginFormEmail">E-mail</label>
     </div>
 
     <!-- Password -->
     <div class="md-form">
-        <input type="password" id="materialLoginFormPassword" class="form-control">
+        <input type="password" name="materialLoginFormPassword" class="form-control">
         <label for="materialLoginFormPassword">Mot de passe</label>
     </div>
 

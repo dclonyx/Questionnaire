@@ -7,7 +7,7 @@ ob_start();
 ?>
 
     <!-- Default form register -->
-<form action="traitement.php" method="post" class="text-center border border-light p-5">
+<form action="traitementin.php" method="post" class="text-center border border-light p-5">
 
 <p class="h4 mb-4">Inscription</p>
 
