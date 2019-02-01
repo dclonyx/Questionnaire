@@ -26,10 +26,8 @@ session_start();
         </div>
     </div>
     <!-- affichage des questionnaire les mieux note -->
-
   
     <!-- Liste deroulante -->
-
 
     </main>
     <footer class="position-fixed fixed-bottom bg-info text-black">
