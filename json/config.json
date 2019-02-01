@@ -1,0 +1,6 @@
+{
+    "servername": "localhost",
+    "dbadmin": "mydev",
+    "adminPass": "developpeur",
+    "dbname": "questionnaire"
+}

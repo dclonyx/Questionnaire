@@ -1,5 +1,7 @@
-<?php ob_start(); ?>
-<body>
+<?php
+$title = 'Connexion';
+ob_start();
+?>
     <!-- Material form login -->
 <div class="card">
 
@@ -40,14 +42,12 @@
     </div>
 
     <!-- Sign in button -->
-    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Connexion</button>
 
     <!-- Register -->
     <p>Pas encore enregistre ?
       <a href="./inscription.php">S'enregistrer</a>
     </p>
-
-    <a class="btn btn-info my-4 btn-block" href="../index.php">Accueil</a>
 
 <?php
 $content = ob_get_clean();

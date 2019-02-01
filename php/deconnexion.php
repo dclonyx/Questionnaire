@@ -1,7 +1,14 @@
-<?php ob_start(); ?>
+<?php
+session_start();
+$title = 'Deconnexion';
+ob_start();
+$_SESSION = array();
 
-
-
+session_destroy();
+?>
+<div class="contenair text-center">
+    <p>Vous etes deconnecte</p>
+</div>
 
 
 <?php
