@@ -33,11 +33,11 @@ if (!empty($mdp) and !empty($mail)){
         
 
     } elseif($mdpok == 0 || $emailok == 0){
-        echo '<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>E-mail ou Mot de passe invalide</div>';
+        echo '<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>E-mail ou Mot de passe invalide</div>';
     }
 
     } else {
-        echo '<div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>Veuilez remplir tous les champs svp</div>';   
+        echo '<div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>Veuilez remplir tous les champs svp</div>';   
     }
 $stmt->closeCursor();
         
