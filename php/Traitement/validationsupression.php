@@ -3,7 +3,7 @@ $title = 'Validation supression';
 ob_start();
 
 $utilisateur = $_POST['pseudo'];
-include ('./database.php');
+include ('./Database.php');
 
 $stmt = $pdo->prepare("DELETE FROM UTILISATEUR WHERE PSEUDO=:utilisateur");
 $stmt->execute(array(
@@ -12,5 +12,5 @@ $stmt->execute(array(
 $stmt->closeCursor();
 
 $content = ob_get_clean();
-require '../php/template/default.php';
+require '../template/default.php';
 ?>

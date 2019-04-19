@@ -53,4 +53,4 @@ if($passe == $passe2){
 }
 
 $content = ob_get_clean();
-require '../php/template/default.php';
+require '../template/default.php';

@@ -13,5 +13,5 @@ session_destroy();
 
 <?php
 $content = ob_get_clean();
-require '../php/template/default.php';
+require '../template/default.php';
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-$file_json = file_get_contents("../json/config.json");
+$file_json = file_get_contents("../../json/config.json");
 $parsed_json = json_decode($file_json, true);
 $dbadmin = $parsed_json['dbadmin'];
 $adminPass = $parsed_json['adminPass'];

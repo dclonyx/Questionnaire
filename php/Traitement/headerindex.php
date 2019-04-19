@@ -20,16 +20,18 @@ if(empty($_SESSION['statut'])){?>
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="../index.php">Home</a>
+            <li class="nav-item">
+                <a class="nav-link" href="./php/Affichage/articles.php">Articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../php/connexion.php">Connexion</a>
+                <a class="nav-link" href="./php/Affichage/archives.php">Archives</a>
+            </li>
+           <li class="nav-item">
+                <a class="nav-link" href="./php/Affichage/connexion.php">Connexion</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../php/inscription.php">Inscription</a>
+                <a class="nav-link" href="./php/Affichage/inscription.php">Inscription</a>
             </li>
-            
         </ul>
         <!-- Links -->
 
@@ -62,16 +64,19 @@ if(empty($_SESSION['statut'])){?>
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="../index.php">Home</a>
+                <p class="nav-link">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Questionnaire</a>
+                <a class="nav-link" href="./php/Affichage/articles.php">Articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">utilisateur</a>
+                <a class="nav-link" href="./php/Affichage/mes_articles.php">Mes articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../php/deconnexion.php">Deconnexion</a>
+                <a class="nav-link" href="./php/Affichage/archives.php">Archives</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./php/Affichage/deconnexion.php">Deconnexion</a>
             </li>
         </ul>
         <!-- Links -->
@@ -106,16 +111,22 @@ if(empty($_SESSION['statut'])){?>
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="../index.php">Home</a>
+                <p class="nav-link">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Questionnaire</a>
+                <a class="nav-link" href="./php/Affichage/articles.php">Articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./administration.php">Administration</a>
+                <a class="nav-link" href="./php/Affichage/mes_articles.php">Mes articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../php/deconnexion.php">Deconnexion</a>
+                <a class="nav-link" href="./php/Affichage/archives.php">Archives</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./php/Affichage/administration.php">Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./php/Affichage/deconnexion.php">Deconnexion</a>
             </li>
         </ul>
         <!-- Links -->

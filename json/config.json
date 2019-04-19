@@ -1,0 +1,6 @@
+{
+    "servername": "Localhost",
+    "dbadmin": "mydev",
+    "adminPass": "developpeur",
+    "dbname": "blog-test"
+}

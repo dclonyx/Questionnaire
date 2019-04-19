@@ -4,7 +4,7 @@ $title = 'Inscription';
 ?>
 
     <!-- Default form register -->
-<form action="traitementin.php" method="post" class="text-center border border-light p-5">
+<form action="../Traitement/traitementin.php" method="post" class="text-center border border-light p-5">
 
 <p class="h4 mb-4">Inscription</p>
 
@@ -30,5 +30,5 @@ $title = 'Inscription';
 
 <?php
 $content = ob_get_clean();
-require '../php/template/default.php';
+require '../template/default.php';
 ?>
