@@ -10,8 +10,8 @@ ORDER by id_Article DESC");
 ob_start();
 if(!empty($_SESSION['statut'])){
     if($_SESSION['statut'] != 0 ){?>
-    <div class="text-center w-100 bg-primary">
-        <a class=" text-white" href="../Affichage/new_article.php">Ajouter un article</a>
+    <div class="text-center w-100">
+        <a href="../Affichage/new_article.php">Ajouter un article</a>
     </div>
     <?php
     }
@@ -19,7 +19,7 @@ if(!empty($_SESSION['statut'])){
 while ($row = $stmt -> fetch()) {
     $nomArticle = $row['nom_Article'];
     $contenuArticle = $row['contenu_Article'];
-    $pseudo = $_SESSION['pseudo'];
+    $pseudo = $row['pseudo'];
     $id = $row['id_Utilisateur'];
     $id_article = $row['id_Article'];
     $statut = $row['statut_Utilisateur'];

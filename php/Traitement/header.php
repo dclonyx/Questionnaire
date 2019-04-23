@@ -2,17 +2,12 @@
 
 if(empty($_SESSION['statut'])){?>
     <header class=" bg-primary">
-  <!--Navbar-->
-  <nav class="navbar navbar-light navbar-1 white">
+    <!--Navbar-->
+    <nav class="navbar navbar-light navbar-1 white">
   
-    <!-- Search form -->
-        <div class="col-mb-4">
-            <input class="form-control" type="text" placeholder="Rechercher" aria-label="Search">
-        </div>
-
         <!-- Collapse button -->
-        <div class="contenair">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="contenair w-100">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         </div>
     
     <!-- Collapsible content -->
@@ -24,7 +19,7 @@ if(empty($_SESSION['statut'])){?>
                 <a class="nav-link" href="../../index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Affichage/articles.php">Articles</a>
+                <a class="nav-link" href="../Affichage/articles.php">Tous les articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/archives.php">Archives</a>
@@ -47,18 +42,13 @@ if(empty($_SESSION['statut'])){?>
 <?php    
 } else if($_SESSION['statut'] == 1){
     ?>
-        <header class=" bg-primary">
-  <!--Navbar-->
-  <nav class="navbar navbar-light navbar-1 white">
-  
-    <!-- Search form -->
-        <div class="col-mb-4">
-            <input class="form-control" type="text" placeholder="Rechercher" aria-label="Search">
-        </div>
-
+    <header class=" bg-primary">
+    <!--Navbar-->
+    <nav class="navbar navbar-light navbar-1 white">
+    
         <!-- Collapse button -->
-        <div class="contenair">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="contenair w-100">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         </div>
     
     <!-- Collapsible content -->
@@ -73,7 +63,7 @@ if(empty($_SESSION['statut'])){?>
                 <a class="nav-link" href="../../index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Affichage/articles.php">Articles</a>
+                <a class="nav-link" href="../Affichage/articles.php">Tous les articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/mes_articles.php">Mes articles</a>
@@ -98,17 +88,12 @@ if(empty($_SESSION['statut'])){?>
 } else if($_SESSION['statut'] == 2){
     ?>
     <header class=" bg-primary">
-  <!--Navbar-->
-  <nav class="navbar navbar-light navbar-1 white">
-  
-    <!-- Search form -->
-        <div class="col-mb-4">
-            <input class="form-control" type="text" placeholder="Rechercher" aria-label="Search">
-        </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-light navbar-1 white">
 
         <!-- Collapse button -->
-        <div class="contenair">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="contenair w-100">
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         </div>
     
     <!-- Collapsible content -->
@@ -123,7 +108,7 @@ if(empty($_SESSION['statut'])){?>
                 <a class="nav-link" href="../../index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Affichage/articles.php">Articles</a>
+                <a class="nav-link" href="../Affichage/articles.php">Tous les articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/mes_articles.php">Mes articles</a>
@@ -132,7 +117,7 @@ if(empty($_SESSION['statut'])){?>
                 <a class="nav-link" href="../Affichage/archives.php">Archives</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Affichage/administration.php">Administration</a>
+                <a class="nav-link" href="../Affichage/administration.php">Administration des articles</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/deconnexion.php">Deconnexion</a>
