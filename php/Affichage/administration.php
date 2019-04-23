@@ -25,33 +25,33 @@ while ($row = $req -> fetch()) {
                 <?php
                 if (!empty($_SESSION['id'])){
                     if ($_SESSION['statut'] == 2 && $statutArticle == 1){?>
-                    <form action="../Affichage/modifier.php" method="POST" class="col-5 col-md-3">
+                    <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                             <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                             <button type="submit" class="mr-auto btn border-primary">Modifier</button>
                         </form>
-                    <form action="../Traitement/archiver_article.php" method="POST" class="col-5 col-md-3">
+                    <form action="../Traitement/archiver_article.php" method="POST" class="col-6 col-md-3 text-center">
                         <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                         <button type="submit" class="btn border-primary">Archiver</button>
                     </form>
                     <p class="col-12 col-md-5 text-center">Cet article est publié</p>
                     <?php
                         } elseif ($_SESSION['statut'] == 2 && $statutArticle == 0){?>
-                            <form action="../Affichage/modifier.php" method="POST" class="col-5 col-md-3">
+                            <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                                     <button type="submit" class="mr-auto btn border-primary">Modifier</button>
                                 </form>
-                            <form action="../Traitement/publier_article.php" method="POST" class="col-5 col-md-3">
+                            <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3 text-center">
                                 <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                                 <button type="submit" class="btn border-primary">Publier</button>
                             </form>
                             <p class="col-12 col-md-5 text-center">Cet article est n'est pas encore publié</p>
                             <?php
                             } elseif ($_SESSION['statut'] == 2 && $statutArticle == 2) {?>
-                                <form action="../Affichage/modifier.php" method="POST" class="col-5 col-md-3">
+                                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                                     <button type="submit" class="mr-auto btn border-primary">Modifier</button>
                                 </form>
-                                <form action="../Traitement/publier_article.php" method="POST" class="col-5 col-md-3">
+                                <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3 text-center">
                                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                                     <button type="submit" class="btn border-primary">Publier</button>
                                 </form>

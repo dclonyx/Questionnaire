@@ -27,11 +27,11 @@ while ($row = $req -> fetch()) {
             <?php
             // non publié et admin
             if($statut == 0 && $stautUtilisateur == 2) {?>
-                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3">
+                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
-                    <button type="submit" class="btn border-primary">Modifier</button>
+                    <button type="submit" class="btn border-primary mx-auto">Modifier</button>
                 </form>
-                <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3">
+                <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Publier</button>
                 </form>
@@ -39,7 +39,7 @@ while ($row = $req -> fetch()) {
             <?php
             // non publié et utilisateur
             } elseif ($statut == 0 && $stautUtilisateur == 1) {?>
-                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3">
+                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Modifier</button>
                 </form>
@@ -47,11 +47,11 @@ while ($row = $req -> fetch()) {
             <?php
             // publié et admin
             } elseif ($statut == 1 && $stautUtilisateur == 2) {?>
-                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3">
+                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Modifier</button>
                 </form>
-                <form action="../Traitement/archiver_article.php" method="POST" class="col-6 col-md-3">
+                <form action="../Traitement/archiver_article.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Archiver</button>
                 </form>
@@ -59,14 +59,14 @@ while ($row = $req -> fetch()) {
             <?php
             // publié et utilisateur
             } elseif ($statut == 1  && $stautUtilisateur == 1) {?>
-                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3">
+                <form action="../Affichage/modifier.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Modifier</button>
                 </form>
                 <p class="col-12 col-md-6 text-center">Cet article est publié</p>
             <?php
             } elseif ($stautUtilisateur == 2){?>
-                <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3">
+                <form action="../Traitement/publier_article.php" method="POST" class="col-6 col-md-3 text-center">
                     <input type="hidden" value="<?php echo $id_article; ?>" name="id_article">
                     <button type="submit" class="btn border-primary">Publier</button>
                 </form>

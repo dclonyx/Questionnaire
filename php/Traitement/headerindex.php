@@ -5,11 +5,10 @@ if(empty($_SESSION['statut'])){?>
     <!--Navbar-->
     <nav class="navbar navbar-light navbar-1 white">
   
-
-        <!-- Collapse button -->
-        <div class="contenair w-100">
-            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        </div>
+    <div class="contenair w-100 d-flex justify-content-between align-items-center">
+        <p class="m-0">Vous n'êtes pas connecté</p>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    </div>
     
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent15">
@@ -43,9 +42,9 @@ if(empty($_SESSION['statut'])){?>
     <header class=" bg-primary">
     <!--Navbar-->
     <nav class="navbar navbar-light navbar-1 white">
-  
         <!-- Collapse button -->
-        <div class="contenair w-100">
+        <div class="contenair w-100 d-flex justify-content-between align-items-center">
+            <p class="m-0">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         </div>
     
@@ -54,9 +53,6 @@ if(empty($_SESSION['statut'])){?>
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <p class="nav-link">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="./php/Affichage/articles.php">Tous les articles</a>
             </li>
@@ -87,7 +83,8 @@ if(empty($_SESSION['statut'])){?>
     <nav class="navbar navbar-light navbar-1 white">
   
         <!-- Collapse button -->
-        <div class="contenair w-100">
+        <div class="contenair w-100 d-flex justify-content-between align-items-center">
+            <p class="m-0">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         </div>
     
@@ -96,9 +93,6 @@ if(empty($_SESSION['statut'])){?>
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <p class="nav-link">Connecté en tant que <?php echo $_SESSION['pseudo']?></p>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="./php/Affichage/articles.php">Tous les articles</a>
             </li>
