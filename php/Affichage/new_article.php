@@ -19,9 +19,13 @@ ob_start();
                 <div class="md-form">
                     <p class="mt-2">Ecrit par <?php echo $_SESSION['nom']." ".$_SESSION['prenom']; ?></p>
                 </div>
+                <?php
+                if ($_SESSION['statut'] == 2) {?>
                 <div>
                     <input type="checkbox" name="publier">Publier l'article
                 </div>
+                <?php
+                }?>
                 <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Envoyer</button>
             </form>
         </div>

@@ -4,7 +4,9 @@ include ('../Traitement/database.php');
 
 $titre = $_POST['titre'];
 $contenu = $_POST['contenu'];
-$publier = $_POST['publier'];
+if ($_SESSION['statut'] == 2) {
+    $publier = $_POST['publier'];
+}
 
 if(!empty($titre)){
     if (!empty($contenu) && $publier){
