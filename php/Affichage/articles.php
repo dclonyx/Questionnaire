@@ -26,9 +26,9 @@ while ($row = $stmt -> fetch()) {
     ?>
     <div class="pb-4 border-primary border-top border-bottom">
         <h2 class="text-capitalize text-center mt-2"><?php echo $nomArticle; ?></h2>
-            <p class="p-2"><?php echo $contenuArticle; ?></p>
-            <div class="row">
-                <p class="text-center m-0 col-11">Auteur : <?php echo $pseudo; ?></p>
+            <p class="p-2"><?php echo nl2br($contenuArticle); ?></p>
+            <div class="row m-0">
+                <p class="text-center m-0 col-12">Auteur : <?php echo $pseudo; ?></p>
             </div>
     </div>
 <?php    

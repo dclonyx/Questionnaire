@@ -22,9 +22,6 @@ if(empty($_SESSION['statut'])){?>
                 <a class="nav-link" href="../Affichage/articles.php">Tous les articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Affichage/archives.php">Archives</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="../Affichage/connexion.php">Connexion</a>
             </li>
             <li class="nav-item">
@@ -64,9 +61,6 @@ if(empty($_SESSION['statut'])){?>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/mes_articles.php">Mes articles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../Affichage/archives.php">Archives</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../Affichage/deconnexion.php">Deconnexion</a>

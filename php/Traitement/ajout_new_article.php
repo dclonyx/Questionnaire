@@ -3,7 +3,7 @@ session_start();
 include ('../Traitement/database.php');
 
 $titre = $_POST['titre'];
-$contenu = $_POST['contenu'];
+$contenu = htmlspecialchars($_POST['contenu']);
 if ($_SESSION['statut'] == 2) {
     $publier = $_POST['publier'];
 }
