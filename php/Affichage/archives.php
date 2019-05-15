@@ -3,7 +3,7 @@ session_start();
 $title = 'Archives';
 include ('../Traitement/database.php');
 
-if ($_SESSION['statut'] === 2){
+if ($_SESSION['statut'] == 2){
     $stmt = $pdo->query("SELECT * FROM Article
     NATURAL JOIN utilisateur
     WHERE statut_Article = 2

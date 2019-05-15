@@ -1,9 +1,7 @@
 <?php
 session_start();
 $title = 'Administration';
-if($_SESSION['statut'] === 2) {
-    header('Location: ../template/redirection.php');
-} else {
+if($_SESSION['statut'] == 2) {
     include ('../Traitement/database.php');
     $req = $pdo->prepare("SELECT * FROM Article
     NATURAL JOIN utilisateur
@@ -66,6 +64,8 @@ if($_SESSION['statut'] === 2) {
         </div>
     <?php    
     }
+} else {
+    header('Location: ../template/redirection.php');
 }
 $content = ob_get_clean();
 require '../template/default.php';
